@@ -168,3 +168,43 @@ h1 {
     pointer-events: none;
 }
 
+#features {
+    padding-top: 8vw;
+    background-color: rgba(115, 66, 214, 0.1);
+  }
+
+  .container {
+    padding: 56px 0;
+  }
+  
+  .row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .movie {
+    width: 33%;
+    padding: 24px;
+  }
+  
+  .movie__img {
+    max-height: 380px;
+    transition: all 300ms ease;
+    cursor: not-allowed;
+    /* Added after tutorial to maintain image aspect ratio */
+    object-fit: contain;
+    object-position: left;
+  }
+  
+  .movie__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+  }

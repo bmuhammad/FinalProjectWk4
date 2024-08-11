@@ -6,13 +6,14 @@ const movieList = document.querySelector(".movies");
 textInput.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     console.log('Enter key pressed!', event.target.value);
+
     let movie = event.target.value;
     searchMovies(movie);
   }
 });
 
 async function searchMovies(movie) {
-
+console.log("searchMovies func hit", movie);
     const results = await fetch(
        `http://www.omdbapi.com/?i=tt3896198&apikey=cc6cc917&s=${movie}`
      );
